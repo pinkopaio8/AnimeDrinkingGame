@@ -10,8 +10,8 @@ function next(){
     document.getElementsByClassName('counter')[0].innerText = "Carta Numero: "+(counter+1);
     $.ajax({
       url: "texts/" + House[counter] + ".html",
-      type: "POST",
-      datatype: "json",
+      //type: "POST",
+      //datatype: "json",
       success: function(result){
           $(".text").html(result);
     }});
@@ -28,8 +28,8 @@ function next(){
     document.getElementsByClassName('counter')[0].innerText = "Carta Numero: "+(counter+1);
     $.ajax({
       url: "texts/" + random + ".html",
-      type: "POST",
-      datatype: "json",
+      //type: "POST",
+      //datatype: "json",
       success: function(result){
           $(".text").html(result);
     }});
@@ -49,8 +49,8 @@ function back(){
     document.getElementsByClassName('counter')[0].innerText = "Carta Numero: "+(counter+1);
     $.ajax({
       url: "texts/" + House[counter] + ".html",
-      type: "POST",
-      datatype: "json",
+      //type: "POST",
+      //datatype: "json",
       success: function(result){
           $(".text").html(result);
     }});
