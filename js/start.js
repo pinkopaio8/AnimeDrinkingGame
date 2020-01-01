@@ -5,6 +5,7 @@ var counter = -1;
 
 function next(){
   counter++;
+  document.getElementsByClassName('text')[0].innerHTML = "<p>Loading...<p>";
   if (House[counter] !== undefined) {
     document.getElementsByClassName('burp')[0].src = "img/" + House[counter] + ".png";
     document.getElementsByClassName('counter')[0].innerText = "Carta Numero: "+(counter+1);
@@ -37,6 +38,7 @@ function next(){
 }
 
 function back(){
+  document.getElementsByClassName('text')[0].innerText = "<p>Loading...<p>";
   if (counter < 0) {
     counter = -1;
   }
